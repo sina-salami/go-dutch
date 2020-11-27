@@ -2,12 +2,12 @@ import React from 'react';
 import { Container, InputStyle } from './Styled';
 import TextInput from '../../components/TextInput';
 
-const Login = () => {
+const Register = (props) => {
     return (
         <Container>
-            <TextInput style={InputStyle} placeholder={'This is login'} />
+            <TextInput style={InputStyle} placeholder={'This is register'} />
         </Container>
     );
 };
 
-export default Login;
+export default Register;
