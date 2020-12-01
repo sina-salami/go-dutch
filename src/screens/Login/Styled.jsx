@@ -37,14 +37,13 @@ export const Rightbox = styled.div`
     filter: blur(0.5px);
 `;
 
-export const Signup = styled.form`
+export const Form = styled.form`
     width: 50%;
     height: 300px;
     margin-top: 0px;
     position: relative;
     display: flex;
     flex-direction: column;
-    justify-content: center;
     align-items: center;
 `;
 
@@ -64,6 +63,7 @@ export const TextWrapper = styled.div`
     display: flex;
     flex-direction: row;
     margin-top: 80px;
+    margin-bottom: 20px;
 `;
 
 
@@ -85,7 +85,7 @@ export const Line = styled.div`
     margin: 15px 20px;
 `;
 
-export const Loginbutton = styled.input`
+export const Loginbutton = css`
     background-color: #37408c;
     color: #fff;
     font-family: Comic Sans MS;
@@ -99,9 +99,4 @@ export const Loginbutton = styled.input`
 export const Signuptxt = styled.p`
     font-family: Cambria math;
     font-size: 19px;
-`;
-
-export const Clearfix = styled.div`
-    clear: both;
-    width: 100px;
 `;

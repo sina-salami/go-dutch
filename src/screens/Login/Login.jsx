@@ -4,7 +4,7 @@ import {
     Container,
     Leftbox,
     Rightbox,
-    Signup,
+    Form,
     Signupinput,
     TextWrapper,
     Title,
@@ -12,12 +12,10 @@ import {
     Line,
     Loginbutton,
     Signuptxt,
-    Usernamelogo,
-    Passwordlogo,
-    Clearfix,
 } from './Styled';
 import TextInput from '../../components/TextInput';
 import { Link } from 'react-router-dom';
+import Button from '../../components/Button';
 
 const Login = () => {
     return (
@@ -26,19 +24,19 @@ const Login = () => {
                 <Leftbox>
                     <TextWrapper>
                         <Line />
-                        <Title>Login to </Title>
+                        <Title>Sign in to </Title>
                         <Title colored> G</Title>
                         <Title>o</Title>
                         <Title colored> D</Title>
                         <Title>utch</Title>
                         <Line />
                     </TextWrapper>
-                    <Signup>
+                    <Form>
                         <TextInput
-                            type={'email'}
-                            id={'email'}
-                            name={'email'}
-                            placeholder={'Email'}
+                            type={'phone'}
+                            id={'phone'}
+                            name={'phone'}
+                            placeholder={'Phone number'}
                             icon={process.env.PUBLIC_URL + '/img/avatar.svg'}
                             style={Signupinput}
                         />
@@ -51,18 +49,19 @@ const Login = () => {
                             style={Signupinput}
                         />
                         <Signintxt>
-                            Forgot your password? <Link to={'/forgot-password'}>Click here</Link>
+                            Forgot your password?{' '}
+                            <Link to={'/forgot-password'}>Click here</Link>
                         </Signintxt>
-                        <Loginbutton
+                        <Button
                             type={'submit'}
-                            id={'login-button'}
-                            value={'Login'}
+                            title={'Sign in'}
+                            style={Loginbutton}
                         />
-                        <Signintxt>
-                            Not on Go Dutch yet? <Link to={'/register'}>Join us</Link>
-                        </Signintxt>
-                        <Clearfix />
-                    </Signup>
+                        <Signuptxt>
+                            Not on Go Dutch yet?{' '}
+                            <Link to={'/register'}>Join us</Link>
+                        </Signuptxt>
+                    </Form>
                 </Leftbox>
                 <Rightbox />
             </Container>

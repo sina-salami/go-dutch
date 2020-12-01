@@ -13,5 +13,6 @@ export const Wrapper = styled.div`
         width: 27px;
         position: absolute;
         top: 8px;
+        left: 5px;
     }
 `;

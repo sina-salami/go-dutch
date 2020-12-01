@@ -6,4 +6,5 @@ export const Routes = {
         root: '/register',
         confirm: '/confirm',
     },
+    verify: '/verify',
 }
