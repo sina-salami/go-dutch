@@ -7,4 +7,6 @@ export const Routes = {
         confirm: '/confirm',
     },
     verify: '/verify',
+    forgot: '/forgot-password',
+    reset: '/reset-password',
 }

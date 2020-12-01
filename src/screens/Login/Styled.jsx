@@ -76,6 +76,7 @@ export const Title = styled.span`
 
 export const Signintxt = styled.p`
     font-family: Cambria math;
+    text-align: center;
 `;
 
 export const Line = styled.div`
