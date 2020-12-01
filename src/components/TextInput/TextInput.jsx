@@ -12,6 +12,7 @@ const TextInput = (props) => {
                 onChange={props.onChange}
                 placeholder={props.placeholder}
             />
+            {props.icon && <img src={props.icon} alt={'icon'} />}
         </Wrapper>
     );
 };
