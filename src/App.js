@@ -2,11 +2,11 @@ import React from "react";
 import { BrowserRouter, Route, Switch } from "react-router-dom";
 import { Routes } from './config';
 import ForgetPassword from './screens/ForgetPassword';
-import Home from './screens/Home';
 import Login from './screens/Login';
 import Register from './screens/Register';
 import ResetPassword from './screens/ResetPassword';
 import Verify from './screens/Verify';
+import Application from './screens/Application';
 
 const App = () => {
   return (
@@ -19,7 +19,7 @@ const App = () => {
         <Route exact path={Routes.reset} render={({ match }) => <ResetPassword match={match} />} />
 
         <PrivateRoute exact path={Routes.home}>
-          <Home />
+          <Application />
         </PrivateRoute>
       </Switch>
     </BrowserRouter>
@@ -28,7 +28,7 @@ const App = () => {
 
 export default App;
 
-const PrivateRoute = ({ children, ...rest }) => {
+export const PrivateRoute = ({ children, ...rest }) => {
   //Loading
   //Server error
   //return sth
